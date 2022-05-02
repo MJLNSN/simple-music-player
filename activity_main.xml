@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="VJ - PaceMak1r"
+        android:textColor="#ffa"
+        android:textSize="37sp"
+        android:id= "@+id/musicName" />
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/cover" />
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_marginRight="250dp"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="04:08"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="#00FFFFFF"/>
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ⅱ"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="#00FFFFFF"/>
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="■"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="#00FFFFFF"/>
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="#00FFFFFF"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◀||"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="#00FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:text="||▶"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    </LinearLayout>
